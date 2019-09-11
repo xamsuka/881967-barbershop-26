@@ -1,12 +1,184 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Барбершоп</title>
+</head>
 
-  </body>
+<body>
+
+  <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
+  <header class="header">
+    <div class="container">
+      <nav class="main-navigation">
+        <a href="" class="main-navigation__logo-link">
+          <img src="" alt="Barbershop borodinski">
+        </a>
+
+        <ul class="main-navigation__list">
+          <li class="main-navitation__item">
+            <a href="#" class="main-navigation__link">Информация</a>
+          </li>
+          <li class="main-navitation__item">
+            <a href="#" class="main-navigation__link">Новости</a>
+          </li>
+          <li class="main-navitation__item">
+            <a href="#" class="main-navigation__link">Прайс-лист</a>
+          </li>
+          <li class="main-navitation__item">
+            <a href="#" class="main-navigation__link">Магазин</a>
+          </li>
+          <li class="main-navitation__item">
+            <a href="#" class="main-navigation__link">Контакты</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <button type="button">Войти</button>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+
+    <section class="benefits">
+      <ul class="benefits__list">
+        <li class="benefits__item">
+          <h2 class="benefits__item-title">БЫСТРО</h2>
+          <svg width="30" height="30">
+            <rect width="30" height="30" fill="black"></rect>
+          </svg>
+          <p class="benefits__item-text">МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ
+            ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+        </li>
+        <li class="benefits__item">
+          <h2 class="benefits__item-title">КРУТО</h2>
+          <svg width="30" height="30">
+            <rect width="30" height="30" fill="black"></rect>
+          </svg>
+          <p class="benefits__item-text">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
+            МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
+            ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+        </li>
+        <li class="benefits__item">
+          <h2 class="benefits__item-title">ДОРОГО</h2>
+          <svg width="30" height="30">
+            <rect width="30" height="30" fill="black"></rect>
+          </svg>
+          <p class="benefits__item-text">НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ,
+            РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?</p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="news">
+        <h2 class="news__header block-header">
+          НОВОСТИ
+        </h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <p class="news__text">
+              НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+            </p>
+            <time datetime="2019-01-11">11 января</time>
+          </li>
+          <li class="news__item">
+            <p class="news__text">
+              В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ
+              СТРОЙНЫЕ РЯДЫ
+            </p>
+            <time datetime="2019-01-18">18 января</time>
+          </li>
+        </ul>
+        <a href="#" class="button">Все новости</a>
+      </div>
+      <div class="photo-gallery">
+        <h2 class="photo-gallery__header block-header">ФОТОГАЛЕРЕЯ</h2>
+        <figure>
+          <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
+        </figure>
+        <button type="button">Назад</button>
+        <button type="button">Вперед</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="contact">
+        <h2 class="contact__header block-header">Контактная информация</h2>
+        <p class="contact__address">
+          БАРБЕРШОП «БОРОДИНСКИЙ»<br />
+          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br />
+          ТЕЛЕФОН: +7 (495) 666-02-66<br />
+        </p>
+        <p class="contact__time">
+          ВРЕМЯ РАБОТЫ: <br />
+          ПН—ПТ: С 10:00 ДО 22:00 <br />
+          СБ—ВС: С 10:00 ДО 19:00 <br />
+        </p>
+        <button type="button">Как проехать</button>
+        <button type="button">Обратная связь</button>
+      </div>
+      <div class="sign-up">
+        <p class="sign-up__text">
+          УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+        </p>
+        <form action="" method="POST">
+          <label> Дата
+            <input type="date" name="" id="">
+          </label>
+          <label> ВРЕМЯ
+            <input type="time" name="" id="">
+          </label>
+          <label> ВАШЕ ИМЯ
+            <input type="text" name="" id="">
+          </label>
+          <label> ТЕЛЕФОН
+            <input type="tel" name="" id="">
+          </label>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a href="map.html">Как нас найти?</a><br>
+        Телефон: +7 (812) 666-02-66
+      </p>
+      <div class="footer-social">
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a href="" class="footer-social__link">Вконтакте</a>
+          </li>
+          <li class="footer-social__item">
+            <a href="" class="footer-social__link">Фейсбук</a>
+          </li>
+          <li class="footer-social__item">
+            <a href="" class="footer-social__link">Инстаграм</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-copyright">
+        <p>
+          Разработано:
+          <a href="" class="footer-copyright__link">HTML Academy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
